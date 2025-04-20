@@ -14,7 +14,7 @@ class Swimmer {
         this.element = this.createSwimmerElement();
         this.lastDirectionChange = Date.now();
         this.currentDirection = this.getRandomDirection();
-        this.speed = 2; // 每秒移动的像素数
+        this.speed = 5; // 每秒移动的像素数
         this.resetPosition();
     }
 
@@ -245,7 +245,7 @@ class SwimmingPool {
     // 开始警告生成器
     startWarningGenerator() {
         setInterval(() => {
-            if (Math.random() < 0.2) {  // 20%概率生成警告
+            if (Math.random() < 0.5) {  // 50%概率生成警告
                 const normalSwimmers = this.swimmers.filter(s => s.status === 'normal');
                 if (normalSwimmers.length > 0) {
                     const randomSwimmer = normalSwimmers[Math.floor(Math.random() * normalSwimmers.length)];
