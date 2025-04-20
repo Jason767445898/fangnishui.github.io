@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游泳者模拟系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧实时日志模块 -->
+        <div class="log-module">
+            <h2>实时日志</h2>
+            <div id="realtime-logs" class="log-content"></div>
+        </div>
+
+        <!-- 中间地图模块 -->
+        <div class="map-module">
+            <h2>游泳者地图</h2>
+            <div id="map-container">
+                <div id="coordinate-system"></div>
+            </div>
+            <!-- 控制面板 -->
+            <div class="control-panel">
+                <div class="control-item">
+                    <label>小球数量: </label>
+                    <button id="decrease-ball">-</button>
+                    <span id="ball-count">1</span>
+                    <button id="increase-ball">+</button>
+                </div>
+                <div class="control-item">
+                    <label>速度调节: </label>
+                    <input type="range" id="speed-control" min="1" max="3" step="0.1" value="1.5">
+                    <span id="speed-value">1.5</span>
+                </div>
+                <div class="control-item">
+                    <button id="reset-map">重置地图</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右侧警告日志模块 -->
+        <div class="alert-module">
+            <h2>警告日志</h2>
+            <div id="alert-logs" class="log-content"></div>
+            <button id="clear-alerts">清除警报</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
