@@ -3,36 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>游泳者模拟系统</title>
+    <title>游泳者实时监控系统</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <!-- 左侧实时日志模块 -->
-        <div class="log-module">
-            <h2>实时日志</h2>
-            <div id="realtime-logs" class="log-content"></div>
+        <div class="panel log-panel">
+            <h2>实时状态日志</h2>
+            <div id="realtime-log" class="log-content"></div>
         </div>
 
         <!-- 中间地图模块 -->
-        <div class="map-module">
-            <h2>游泳者地图</h2>
+        <div class="panel map-panel">
+            <h2>监控地图</h2>
             <div id="map-container">
-                <div id="coordinate-system"></div>
-            </div>
-            <!-- 控制面板 -->
-            <div class="control-panel">
-                <div class="control-item">
-                    <button id="reset-map">重置地图</button>
+                <div id="coordinate-map">
+                    <!-- 地图网格将通过 JavaScript 动态生成 -->
                 </div>
             </div>
         </div>
 
         <!-- 右侧警告日志模块 -->
-        <div class="alert-module">
+        <div class="panel warning-panel">
             <h2>警告日志</h2>
-            <div id="alert-logs" class="log-content"></div>
-            <button id="clear-alerts">清除所有警报</button>
+            <div id="warning-log" class="log-content"></div>
         </div>
     </div>
 
