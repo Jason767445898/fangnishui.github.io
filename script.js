@@ -1,6 +1,6 @@
 // 常量定义
-const MAP_COLS = 4;  // A-D
-const MAP_ROWS = 3;  // 1-3
+const MAP_COLS = 20;  // A-T
+const MAP_ROWS = 20;  // 1-20
 const UPDATE_INTERVAL = 5000;  // 5秒更新一次
 const MIN_DIRECTION_TIME = 15000;  // 最小方向保持时间15秒
 const MAX_LOGS = 20;  // 最大日志数量
