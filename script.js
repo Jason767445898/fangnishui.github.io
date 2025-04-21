@@ -14,7 +14,7 @@ class Swimmer {
         this.element = this.createSwimmerElement();
         this.lastDirectionChange = Date.now();
         this.currentDirection = this.getRandomDirection();
-        this.speed = 5; // 每秒移动的像素数
+        this.speed = 7; // 每秒移动的像素数
         this.resetPosition();
     }
 
